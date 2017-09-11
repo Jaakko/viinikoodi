@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+
+<!-- versionCode is a monotonically increasing integer. I'm starting it at 6 because v2.3 is the 6th
+version to be published. The next versionCode will be 7, regardless of whether the user-visible
+versionName is 2.31, 2.4, or 3.0. -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="fi.viinikoodi.client.android"
+          android:versionName="0.6"
+          android:versionCode="8">
+  <!-- We require Cupcake (Android 1.5) or later, but are really targeting Donut. -->
+  <uses-sdk android:minSdkVersion="3"
+            android:targetSdkVersion="4"/>
+  <!-- Donut-specific flags which allow us to run on any dpi screens. -->
+  <supports-screens android:largeScreens="true"
+                    android:normalScreens="true"
+                    android:smallScreens="true"
+                    android:anyDensity="true"/>
+  <!-- For Donut and above we must specify that we use the camera, but intentionally omit the
+  autofocus feature in order for the app to appear in Market for non-AF devices. While it's true
+  that 1D barcodes will not be scannable, QR Codes will work. Ideally we'd show users a message
+  to this effect on first launch. -->
+  <uses-feature android:name="android.hardware.camera"/>
+  <application android:icon="@drawable/launcher_icon"
+               android:label="@string/app_name">
+    <activity android:name="com.google.zxing.client.android.CaptureActivity"
+              android:screenOrientation="landscape"
+              android:configChanges="orientation|keyboardHidden"
+              android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+              android:windowSoftInputMode="stateAlwaysHidden">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+    <activity android:name="fi.viinikoodi.PreferencesActivity"
+              android:label="@string/preferences_name">
+    </activity>
+    <activity android:name="fi.viinikoodi.WineHistoryActivity"
+    		  android:screenOrientation="user"
+    		  android:configChanges="orientation"
+    		  android:theme="@style/MyTheme">
+    </activity>
+    <activity android:name="fi.viinikoodi.WineInfoActivity"
+    		  android:screenOrientation="user"
+    		  android:configChanges="orientation"
+    		  android:theme="@style/MyTheme">
+    </activity>
+    <activity android:name="fi.viinikoodi.HelpActivity"
+              android:screenOrientation="user">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+      </intent-filter>
+    </activity>
+  </application>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.FLASHLIGHT"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+</manifest>

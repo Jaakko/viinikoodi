@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ Copyright (C) 2010 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<resources>
+  <string name="app_name">Viinikoodi</string>
+  <string name="app_picker_name">Ohjelmat</string>
+  <string name="button_back">Takaisin</string>
+  <string name="button_cancel">Poistu</string>
+  <string name="button_done">Valmis</string>
+  <string name="button_ok">OK</string>
+  <string name="button_open_browser">Avaa selain</string>
+  <string name="history_clear_text">Tyhjennä historia</string>
+  <string name="history_email_title">Viivakoodin skanneri historia</string>
+  <string name="history_send">Lähetä historia</string>
+  <string name="history_title">Historia</string>
+  <string name="menu_search">Tekstihaku</string>
+  <string name="menu_about">Tietoja</string>
+  <string name="menu_help">Apua</string>
+  <string name="menu_history">Historia</string>
+  <string name="menu_settings">Asetukset</string>
+  <string name="menu_share">Jaa</string>
+  <string name="menu_wineinfo_delete">Poista viini</string>
+  <string name="menu_wineinfo_share">Jaa tiedot</string>
+  <string name="menu_wineinfo_scan">Lue viivakoodi</string>
+  <string name="menu_wineinfo_erase_rating">Poista arviot</string>
+  <string name="menu_wineinfo_web">Web sivu</string>
+  <string name="menu_wineinfo_save">Tulosta tiedostoon</string>
+  <string name="menu_wineinfo_order">Lajittele viinit</string>
+  <string name="alert_winehistory_title">Lajitteluperuste</string>
+  <string name="alert_winehistory_ok">OK</string>
+  <string name="alert_winehistory_cancel">Peruuta</string>
+  <string name="alert_winehistory_time">Ajan mukaan</string>
+  <string name="alert_winehistory_rating">Arvion mukaan</string>
+  <string name="alert_winehistory_price">Hinnan mukaan</string>
+  <string name="msg_about">Perustuu avoimen koodin ZXing Barcode kirjastoon</string>
+  <string name="msg_buggy">Tämä laite on tunnettuja vikoja, jotka aiheuttavat viivakoodi skannauksen ongelmia. Varten Lisätietoja http://code.google.com/p/zxing/wiki/FrequentlyAskedQuestions</string>
+  <string name="msg_bulk_mode_scanned">Bulk tila: viivakoodi skannataan ja tallennetaan</string>
+  <string name="msg_camera_framework_bug">Anteeksi, Android kamera kohtasi virheen. Sinun täytyy ehkä käynnistää laite uudelleen.</string>
+  <string name="msg_default_mms_subject">Hei</string>
+  <string name="msg_default_status">Aseta viivakoodi neliön sisälle.</string>
+  <string name="msg_default_time">Aika</string>
+  <string name="msg_default_type">Tyypi</string>
+  <string name="msg_encode_contents_failed">Ei voinut purkaa viivakoodin sisältöä.</string>
+  <string name="msg_intent_failed">Anteeksi, pyydettyä ohjelmaa ei voi käynnistää. Viivakoodin sisältö on voinut vahingoittua.</string>
+  <string name="msg_loading_apps">Ladataan listaa ohjelmista\u2026</string>
+  <string name="msg_not_our_results">Olet lähtemässä ohjelmasta. Hakutulokset jotka näet eivät välttämättä kuulu ohjelmaan.</string>
+  <string name="msg_share_subject_line">Tässä on viivakoodin skannattu sisältö</string>
+  <string name="msg_unmount_usb">SD-kortti ei ole käytettävissä.</string>
+  <string name="msg_no_wine_notes">Kirjoita oma arvio viinistä...</string>
+  <string name="msg_wine_search_error">Valitettavasti tapahtui tuntematon virhe.</string>
+  <string name="msg_wine_removed">Viini poistettu.</string>
+  <string name="msg_wine_rating_removed">Viini arviot poistettu.</string>
+  <string name="msg_wine_rating_stored">tähteä tallennettu</string>
+  <string name="msg_wine_share_title">Viinin tiedot</string>
+  <string name="msg_wine_share_star_rating">tähteä</string>
+  <string name="msg_winehistory_saved">Viinihistoria tallennettiin tiedostoon</string>
+  <string name="msg_searching_wine">Haetaan tietoja...</string>
+  <string name="preferences_actions_title">Kun viivakoodi löytyy\u2026</string>
+  <string name="preferences_custom_product_search_summary">Käytä %s paikkana viivakoodille</string>
+  <string name="preferences_custom_product_search_title">Käytetty hakuosoite</string>
+  <string name="preferences_decode_1D_title">Dekoodaa 1D viivakoodeja</string>
+  <string name="preferences_decode_Data_Matrix_title">Dekoodaa Data Matrix</string>
+  <string name="preferences_decode_QR_title">Dekoodaa QR koodeja</string>
+  <string name="preferences_front_light_summary">Aktivoi valo edessä, jos käytettävissä, mutta saattaa aiheuttaa häikäisyä. Ei toimi kaikissa puhelimissa.</string>
+  <string name="preferences_front_light_title">Valo edessä</string>
+  <string name="preferences_general_title">Yleiset asetukset</string>
+  <string name="preferences_name">Asetukset</string>
+  <string name="preferences_play_beep_title">Piip</string>
+  <string name="preferences_result_title">Tuloksien asetukset</string>
+  <string name="preferences_scanning_title">Kun skannaus viivakoodia\u2026</string>
+  <string name="preferences_vibrate_title">Värinä</string>
+  <string name="title_about">Viinikoodi</string>
+  <string name="no_winelist_items">Ei viinejä listalla vielä</string>
+  <string name="zxing_url">http://code.google.com/p/zxing</string>
+</resources>

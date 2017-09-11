@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+     <item android:state_pressed="true"
+           android:drawable="@drawable/earth_icon_24" /> <!-- pressed -->
+     <item android:state_focused="true"
+           android:tint="@color/history_title_button_highlight"
+           android:drawable="@drawable/earth_icon_24"/> <!-- focused -->
+     <item android:drawable="@drawable/earth_icon_48"
+     	   android:tint="@null"/>
+     		 <!-- default -->
+</selector>
